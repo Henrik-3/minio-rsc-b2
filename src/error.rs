@@ -80,7 +80,7 @@ pub struct S3Error {
     pub message: String,
     #[serde(default)]
     pub resource: String,
-    pub request_id: String,
+    pub request_id: Option<String>,
     pub host_id: Option<String>,
     pub bucket_name: Option<String>,
     pub object_name: Option<String>,
